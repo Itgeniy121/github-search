@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.054e6c8f.css",
+    "main.js": "/static/js/main.e49603b2.js",
+    "static/media/github-mark-white.svg": "/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "index.html": "/index.html",
+    "main.054e6c8f.css.map": "/static/css/main.054e6c8f.css.map",
+    "main.e49603b2.js.map": "/static/js/main.e49603b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.054e6c8f.css",
+    "static/js/main.e49603b2.js"
+  ]
+}

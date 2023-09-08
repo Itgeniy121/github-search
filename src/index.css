@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+
+.nunito-20 {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+.mont-16 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+.mont-16-v2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #787a7a;
+}
+.mont-14 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #787a7a;
+}
+.mont-11-v2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: black;
+}
+.mont-11 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #787a7a;
+}
+.mont-25 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nunito-20-v2 {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #787a7a;
+}
+.nunito-20-v3 {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: red;
+}
+
+.nunito-18 {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+}
+.description {
+  font-size: 12px;
+  font-weight: 200;
+  color: #787a7a;
 }
