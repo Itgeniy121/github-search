@@ -27,12 +27,12 @@ const HomePage = () => {
   };
 
   return (
-    <div className='w-full flex-row flex justify-between items-start px-[100px]'>
+    <div className='w-full flex-row flex justify-between items-start px-[100px] max-xl:px-[30px] max-sm:flex-col max-med:px-[10px]'>
       {isError && <p>Что-то произошло</p>}
-      <div className='relative pt-[30px]'>
+      <div className='relative pt-[30px] mr-[20px]'>
         <input
           type='text'
-          className='border py-[2px] px-[6px] w-[500px] h-[40px] outline-none'
+          className='border py-[2px] px-[6px] w-[500px] h-[40px] outline-none max-med:w-[300px]'
           placeholder='Введите GitHub логин'
           value={search}
           onChange={e => setSearch(e.target.value)}
@@ -53,7 +53,7 @@ const HomePage = () => {
         )}
       </div>
 
-      <div className='flex flex-col justify-normal items-start w-[620px] h-[600px] overflow-y-auto mt-[30px]'>
+      <div className='flex flex-col justify-normal items-start w-[620px] h-[600px] overflow-y-auto mt-[30px] max-l:w-[400px] max-med:w-[300px]'>
         <h1 className='nunito-20-v2'>Репозитории:</h1>
         {reposIsLoading && <p className='mont-16-v2'>Loading ...</p>}
         {repos?.map(repo => (

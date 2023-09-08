@@ -25,7 +25,7 @@ const Repo: FC<RepoProps> = ({ name, privacy, url, description, watchers }) => {
   };
 
   return (
-    <div className='w-[600px] h-[150px] border-[2px] border-[#787A7A] rounded-[7px] mb-[20px] px-[10px] py-[10px] flex flex-col hover:bg-[#c1c1c1]'>
+    <div className='w-[600px] h-[150px]  border-[2px] border-[#787A7A] rounded-[7px] mb-[20px] px-[10px] py-[10px] flex flex-col hover:bg-[#c1c1c1] max-l:w-[390px] max-med:w-[290px]'>
       <a href={url} target='_blank' rel='noreferrer'>
         <div className='flex flex-row items-center justify-start'>
           <img src={book} alt='book' className='w-[25px] h-[25px]' />
@@ -34,7 +34,7 @@ const Repo: FC<RepoProps> = ({ name, privacy, url, description, watchers }) => {
             {privacy ? "Private" : "Public"}
           </p>
         </div>
-        <div className='mt-[5px]'>
+        <div className='mt-[5px] h-[32px] overflow-x-auto'>
           <p className='description'>{description}</p>
         </div>
         <div className='mt-[5px]'>

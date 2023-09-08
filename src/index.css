@@ -75,3 +75,15 @@
   font-weight: 200;
   color: #787a7a;
 }
+.nunito-mobile{
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+.mont-mobile{
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
