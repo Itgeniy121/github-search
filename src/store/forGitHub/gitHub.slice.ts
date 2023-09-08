@@ -6,7 +6,7 @@ interface GitHubState {
 const localStorage_KEY = "lsk";
 
 const initialState: GitHubState = {
-  favourites: JSON.parse(localStorage.getItem(localStorage_KEY) ?? '[]'),
+  favourites: JSON.parse(localStorage.getItem(localStorage_KEY) ?? "[]"),
 };
 
 export const gitHubSlice = createSlice({
@@ -18,11 +18,11 @@ export const gitHubSlice = createSlice({
       localStorage.setItem(localStorage_KEY, JSON.stringify(state.favourites));
     },
     removeFromFavourites(state, action: PayloadAction<string>) {
-        state.favourites = state.favourites.filter(f => f !== action.payload)
-        localStorage.setItem(localStorage_KEY, JSON.stringify(state.favourites));
+      state.favourites = state.favourites.filter(f => f !== action.payload);
+      localStorage.setItem(localStorage_KEY, JSON.stringify(state.favourites));
     },
   },
 });
 
-export const gitHubActions = gitHubSlice.actions
-export const gitHubReducer = gitHubSlice.reducer
+export const gitHubActions = gitHubSlice.actions;
+export const gitHubReducer = gitHubSlice.reducer;

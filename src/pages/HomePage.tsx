@@ -10,7 +10,6 @@ const HomePage = () => {
   const [search, setSearch] = useState("");
   const debounce = useSearch(search);
   const [dropdown, setDropdown] = useState(false);
-  const [currentUser, setCurrentUser] = useState("");
   const { isLoading, isError, data } = useSearchUsersQuery(debounce, {
     skip: debounce.length < 3,
   });
